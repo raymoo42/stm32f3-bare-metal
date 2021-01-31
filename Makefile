@@ -37,7 +37,7 @@ LFLAGS += -lgcc
 LFLAGS += -T$(LSCRIPT)
 VECT_TBL = ./vector_table.S
 AS_SRC   = ./core.S
-C_SRC    = ./main.c
+C_SRC    = ./src/main.c
 OBJS =  $(VECT_TBL:.S=.o)
 OBJS += $(AS_SRC:.S=.o)
 OBJS += $(C_SRC:.c=.o)
